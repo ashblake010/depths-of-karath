@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#000000">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Depths of Karath</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+  <canvas id="gc"></canvas>
+  <div id="overlay"></div>
+</div>
+
+<!-- Asset files -->
+<script src="assets/sprites/player.js"></script>
+<script src="assets/sprites/enemies.js"></script>
+<script src="assets/sprites/bosses.js"></script>
+<script src="assets/sprites/items.js"></script>
+<script src="assets/tiles/tileset.js"></script>
+
+<!-- Data files -->
+<script src="data/classes.js"></script>
+<script src="data/enemies.js"></script>
+<script src="data/items.js"></script>
+<script src="data/bosses.js"></script>
+
+<!-- Engine -->
+<script src="src/sound.js"></script>
+<script src="src/player.js"></script>
+<script src="src/dungeon.js"></script>
+<script src="src/combat.js"></script>
+<script src="src/renderer.js"></script>
+<script src="src/ui.js"></script>
+<script src="src/game.js"></script>
+
+<script>window.addEventListener('load', () => Game.init());</script>
+</body>
+</html>
